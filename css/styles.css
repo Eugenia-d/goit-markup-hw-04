@@ -2,8 +2,8 @@
   --accent-color: #2196f3;
   --primary-text-color: #212121;
   --background-color: #2f303a;
-  --main-font: "Roboto", sans-serif;
-  --secondary-font: "Raleway", sans-serif;
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
   --card-set-gap: 30px;
 }
 
@@ -171,6 +171,8 @@ body {
 
 .hero {
   background: #2f303a;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/img.jpg);
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -306,12 +308,38 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 1, 19;
+  margin-bottom: 16px;
   /* identical to box height */
 
   text-align: center;
   letter-spacing: 0.03em;
 
   color: #757575;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  fill: #2196f3;
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
 }
 
 .photo {
@@ -327,7 +355,7 @@ body {
 }
 
 .logo-footer {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
