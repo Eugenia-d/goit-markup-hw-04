@@ -172,7 +172,7 @@ body {
 .hero {
   background: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/img.jpg);
+    url(../images/people.jpg);
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -214,12 +214,24 @@ body {
 }
 
 .list-advantages {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
 }
 .item {
   width: calc((100% - 90px) / 4);
   margin-right: var(--card-set-gap);
+}
+
+.item-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  background-size: contain;
 }
 
 .item:nth-child(4n) {
@@ -329,12 +341,18 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: #fff;
+  fill: #afb1b8;
+  background-color: #fff(160, 18, 18);
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: #fff;
 }
 
 .social-list-link:hover,
 .social-list-link:focus {
-  fill: #2196f3;
+  background-color: var(--accent-color);
 }
 
 .social-list-icon {
@@ -345,6 +363,43 @@ body {
 .photo {
   border-radius: 0px;
 }
+
+/* ======== REGULAR CUSTOMERS  ========*/
+
+.title-customers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.customer {
+  fill: #afb1b8;
+  /* width: 100%; */
+  /* height: 100%; */
+  object-fit: cover;
+}
+
+.customer:hover,
+.customer:focus {
+  fill: var(--accent-color);
+}
+
+.customer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.customer-link:hover,
+.customer-link:focus {
+  border-color: var(--accent-color);
+}
+
+/* ======== END REGULAR CUSTOMERS  ========*/
 
 /* ======== FOOTER  ========*/
 
@@ -420,6 +475,40 @@ body {
 address {
   font-style: normal;
 }
+.text-footer {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.block-two {
+  display: flex;
+  align-items: center;
+}
+
+.link-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-picture {
+  width: 20px;
+  height: 20px;
+}
 
 /* ======== END FOOTER  ========*/
 
@@ -491,7 +580,7 @@ address {
   border: 1px solid #eeee;
   border-top: none;
 }
-*/ .card-name {
+.card-name {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
