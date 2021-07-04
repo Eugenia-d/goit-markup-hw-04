@@ -484,14 +484,16 @@ address {
 
   color: #ffffff;
 }
-.block-two {
-  display: flex;
-  align-items: center;
-}
 
 .link-footer {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
 }
 
 .footer-link {
@@ -503,6 +505,19 @@ address {
   border-radius: 50%;
   fill: #ffffff;
   background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  background-color: var(--accent-color);
+}
+
+.first-block {
+  margin-right: 70px;
+}
+
+.footer-item {
+  margin-right: 10px;
 }
 
 .footer-picture {
