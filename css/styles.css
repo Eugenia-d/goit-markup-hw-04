@@ -222,20 +222,34 @@ body {
   margin-right: var(--card-set-gap);
 }
 
-.item-picture {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  background-size: contain;
-}
-
 .item:nth-child(4n) {
   margin-right: 0;
+}
+
+.item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-color: #f5f4fa;
+  block-size: 65px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.antenna::before {
+  background-image: url(../images/advantages/antenna.svg);
+}
+
+.clock::before {
+  background-image: url(../images/advantages/clock.svg);
+}
+
+.diagram::before {
+  background-image: url(../images/advantages/diagram.svg);
+}
+
+.astronaut::before {
+  background-image: url(../images/advantages/astronaut.svg);
 }
 
 .advantages-title {
@@ -246,7 +260,9 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+  margin-top: 30px;
 }
+
 .advantages-text {
   font-weight: normal;
   font-size: 14px;
@@ -258,10 +274,6 @@ body {
 /* ======== END ADVANTAGES ========*/
 
 /* ======== WHAT ARE WE DOING  ========*/
-
-/* .what-we-do {
-  margin-bottom: 94px;
-} */
 
 .title {
   margin-bottom: 50px;
