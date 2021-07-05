@@ -168,10 +168,8 @@ body {
   color: #757575;
 }
 
-.mail-link:hover,
-.tel-link:hover,
-.mail-link:hover,
-.tel-link:focus {
+.contact-links:hover,
+.contact-links:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
