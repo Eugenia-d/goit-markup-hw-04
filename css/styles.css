@@ -140,7 +140,7 @@ body {
 }
 
 .mail-link {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   font-weight: 500;
   font-size: 14px;
@@ -150,6 +150,8 @@ body {
 }
 
 .tel-link {
+  display: inline-flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
@@ -157,14 +159,31 @@ body {
   color: #757575;
 }
 
-.mail-link:before {
+.mail-link::before {
   content: '';
   background-image: url(../images/header/envelope.svg);
   display: block;
   background-repeat: no-repeat;
-  background-position: center;
-  width: 22px;
-  height: 10px;
+  background-size: contain;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.tel-link::before {
+  content: '';
+  background-image: url(../images/header/smartphone.svg);
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.list-contact:hover,
+.list-contact:focus {
+  color: var(--accent-color);
 }
 
 .mail-link:hover,
