@@ -140,45 +140,32 @@ body {
 }
 
 .mail-link {
-  display: inline-flex;
+  display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02em;
   color: #757575;
+}
+
+.icon-contact {
+  width: 16px;
+  height: 16px;
+  color: #757575;
+  margin-right: 10px;
 }
 
 .tel-link {
-  display: inline-flex;
+  display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02em;
   color: #757575;
-}
-
-.mail-link::before {
-  content: '';
-  background-image: url(../images/header/envelope.svg);
-  display: block;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-}
-
-.tel-link::before {
-  content: '';
-  background-image: url(../images/header/smartphone.svg);
-  display: block;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 16px;
-  height: 16px;
-  margin-right: 10px;
 }
 
 .list-contact:hover,
@@ -189,11 +176,13 @@ body {
 .mail-link:hover,
 .mail-link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .tel-link:hover,
 .tel-link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* ======== END HEADER ========*/
