@@ -625,6 +625,10 @@ address {
   color: #757575;
 }
 
+.card-link {
+  display: block;
+}
+
 .card-link:focus,
 .card-link:hover {
   cursor: pointer;
